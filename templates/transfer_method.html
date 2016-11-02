@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="/create_transfer_method" method="POST">
+  <script src="https://api.sandbox.hyperwallet.com/rest/widgets/transfer-methods/{{token}}/en.min.js"
+    class="hw-form-transfer-methods"
+    data-hw-skipProfileFields="true"
+    data-hw-template="bootstrap3"
+    data-hw-transferMethodConfiguration="{&quot;country&quot;: &quot;CA&quot;,&quot;profileType&quot;: &quot;INDIVIDUAL&quot;}">
+  </script>
+</form>
+{% endblock %}

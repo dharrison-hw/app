@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="/create_user" method="post">
+    <div class="hw-group-with-template">
+        <fieldset>
+            <legend>Profile</legend>
+                <div>
+                    <div>
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input name="firstName" type="tel" class="form-control" id="firstName" placeholder="John" value="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input name="lastName" type="tel" class="form-control" id="lastName" placeholder="Smith" value="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input name="email" type="tel" class="form-control" id="email" placeholder="john@hyperwallet.com" value="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <label for="dateOfBirth">Date of Birth</label>
+                            <input name="dateOfBirth" type="tel" class="form-control" id="dateOfBirth" placeholder="1990-01-01" value="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <label for="addressLine1">Address</label>
+                            <input name="addressLine1" type="tel" class="form-control" id="addressLine1" placeholder="123 Fake Street" value="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input name="city" type="tel" class="form-control" id="city" placeholder="Vancouver" value="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <label for="stateProvince">State / Province</label>
+                            <input name="stateProvince" type="tel" class="form-control" id="stateProvince" placeholder="BC" value="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <input name="country" type="tel" class="form-control" id="country" placeholder="CA" value="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <label for="postalCode">Postal Code</label>
+                            <input name="postalCode" type="tel" class="form-control" id="postalCode" placeholder="V6B2S5" value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <div>
+            <button class="btn btn-primary"type="submit">Submit</button>
+        </div>
+    </div>
+</form>
+{% endblock %}
