@@ -10,6 +10,47 @@
         .navbar-nav {
             float: right;
         }
+        #massive {
+            background: url("{{ url_for('static', filename='background.jpg') }}");
+            background-position: center;
+            background-size: cover;
+            padding-top: 100px;
+            color: black;
+        }
+        .navbar-inverse {
+            background: #9fa8bd;
+            border: none;
+        }
+        .navbar-brand {
+            color: #333;
+        }
+        .btn-primary {
+            background: #9fa8bd;
+            border-color: #868d9c;
+        }
+        .btn-primary:focus {
+            background: #737a8c;
+            border-color: #868d9c;
+        }
+        .btn-primary:hover {
+            background-color: #6f98bb;
+            border-color: #8da5b9;
+        }
+        .navbar-inverse .navbar-toggle {
+            border: none;
+        }
+        .navbar-inverse .navbar-brand {
+            color: black;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: black;
+        }
+        .hero-feature p {
+            font-size: 1.5em;
+        }
+        form {
+            padding: 50px;
+        }
     </style>
 </head>
 <body>
@@ -18,29 +59,8 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Hyperwallet Inc.</a>
+                <a class="navbar-brand" href="#">Local Living Inc.</a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
